@@ -29,12 +29,12 @@ h1 {
 }
 
 .ramo {
-  background-color: #c8e6c9;
+  background-color: #c8e6c9; /* Color base */
   border: 2px solid #388e3c;
   border-radius: 12px;
   padding: 1rem;
   box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s;
+  transition: background-color 0.3s, opacity 0.3s;
   cursor: pointer;
   opacity: 0.6;
 }
@@ -50,13 +50,16 @@ h1 {
   font-size: 0.9rem;
 }
 
+/* Cuando el ramo está activo pero no aprobado */
 .ramo.activo {
   opacity: 1;
-  cursor: pointer;
+  background-color: #F2AF5C; /* Naranja pastel */
 }
 
+/* Cuando el ramo está aprobado */
 .ramo.aprobado {
-  background-color: #f8bbd0;
+  background-color: #74A65D; /* Verde musgo pastel */
   text-decoration: line-through;
-  border-color: #c2185b;
+  border-color: #558B2F;
+  opacity: 1;
 }
